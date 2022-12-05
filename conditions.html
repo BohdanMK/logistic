@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&     display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Головна</title>
+</head>
+
+<body>
+
+    <main class="page">
+        <div class="page__head">
+            <header class="header">
+                <div class="container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">
+                            <a class="header__link" href="">
+                                <img class="header__images" src="img/Favicon.svg" alt="">
+                                <span>CenterLogistic</span>
+                            </a>
+                        </div>
+
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item">
+                                    <a class="nav__link" href="index.html">
+                                        Home Page
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="#">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a class="nav__link" href="blog.html">
+                                        Our blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+
+                        <button class="burger active">
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span></span>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <img class="page__head-picture" src="img/zhdvagony.jpg" alt="">
+        </div>
+
+        <div class="page__body">
+            <div class="container">
+                <h2 class="news__title condition--news__title">
+                    <span>Terms </span>and Conditions
+                </h2>
+                <div class="news__wrapper blog--news__wrapper">
+                    <article class="news__article">
+                        <h3 class="news__article-title">Introduction</h3>
+                        <p>These Website Standard Terms and Conditions written on this webpage shall manage your
+                            use of our website, Webiste Name accessible at Website.com.
+                        </p>
+                        <p>
+                            These Terms will be applied fully and affect to your use of this Website. By using
+                            this Website, you agreed to accept all terms and conditions written in here. You
+                            must not use this Website if you disagree with any of these Website Standard Terms
+                            and Conditions.
+                        </p>
+                        <p>
+                            Minors or people below 18 years old are not allowed to use this Website. </p>
+                    </article>
+                    <!--news__article-->
+                    <article class="news__article">
+                        <h3 class="news__article-title">Intellectual Property Rights</h3>
+                        <p>Other than the content you own, under these Terms, Company Name and/or its licensors
+                            own all the intellectual property rights and materials contained in this Website.
+                        </p>
+                        <p>
+                            You are granted limited license only for purposes of viewing the material contained
+                            on this Website.
+                        </p>
+                    </article>
+                    <!--news__article-->
+                </div>
+                <!--news__wrapper-->
+                <a href="index.html" class="btn btn--main">Back to home</a>
+            </div>
+        </div>
+
+
+        <div class="footer" style="background: url(img/Footer.jpg) no-repeat center / cover;" id="contact">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a class="footer__link" href="index.html">
+                <img class="footer__logo" src="img/logo.png" alt="">
+            </a>
+            <address class="footer__info">
+                <a class="footer__address" href="">New York, Street, ZIP code
+                </a>
+                <div class="footer__link">
+                    <a href="tel:+9948373123">
+                        <span>Call Us:</span>
+                        +9948373123
+                    </a>
+                    <span>or</span>
+                    <a href="mailto:hello@centerlogistic.com">
+                        <span>E-mail:</span>
+                         hello@centerlogistic.com</a>
+                </div>
+            </address>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__list-link"  href="../conditions.html">Terms & Contidions</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__list-link" href="../privacy-policy.html"> Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__list-link" href="../blog.html">Our blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+        <section class="modal"  id="modalCall">
+    <div class="modal__block">
+        <button class="close">
+        </button>
+        <h3 class="modal__title">Need to deliver your cargo?
+            We can help!</h3>
+        <div class="modal__sup-title">
+            <p>Fill a little form and we will call you back!</p>
+        </div>
+
+        <form class="modal__form" action="/" method="post">
+            <div class="modal__group">
+                <img class="modal__icon" src="img/modal/person.svg" alt="">
+                <input class="modal__input" type="text" placeholder="Your name">
+            </div>
+            <div class="modal__group">
+                <img class="modal__icon" src="img/modal/call.svg" alt="">
+                <input class="modal__input" type="tel" placeholder="Your phone">
+            </div>
+            <div class="modal__group">
+                <img class="modal__icon" src="img/modal/mail.svg" alt="">
+                <input class="modal__input" type="email" placeholder="Your e-mail">
+            </div>
+        </form>
+        <button id="formBtn" disabled data-messeg="modalThk" class="btn" type="submit" >Call me back</button>
+
+        <address class="modal__address">
+            <h4 class="modal__address-title">Our contacts</h4>
+            <ul class="modal__address-list">
+                <li class="modal__address-item">
+                    <a class="modal__address-link" href="#">New York, Street, ZIP code</a>
+                </li>
+                <li class="modal__address-item">
+                    <span>Phone:</span>
+                    <a class="modal__address-link" href="tel:+9948373123
+                    ">+9948373123
+                    </a>
+                </li>
+                <li class="modal__address-item">
+                    <span>E-mail:</span><a class="modal__address-link" href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                </li>
+            </ul>
+        </address>
+    </div>
+</section>
+        <section class="modal" id="modalThk">
+    <div class="modal__block">
+        <button class="close">
+        </button>
+        <img class="modal__picture" src="img/modal/tick.svg" alt="">
+        <h3 class="modal__title modal__title--messeg">Thanks for your request</h3>
+        <div class="modal__sup-title">
+            <p>We call you back as soon as possible!</p>
+        </div>
+
+        <address class="modal__address">
+            <h4 class="modal__address-title">Our contacts</h4>
+            <ul class="modal__address-list">
+                <li class="modal__address-item">
+                    <a class="modal__address-link" href="#">New York, Street, ZIP code</a>
+                </li>
+                <li class="modal__address-item">
+                    <span>Phone:</span>
+                    <a class="modal__address-link" href="tel:+9948373123
+                    ">+9948373123
+                    </a>
+                </li>
+                <li class="modal__address-item">
+                    <span>E-mail:</span><a class="modal__address-link" href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                </li>
+            </ul>
+        </address>
+    </div>
+</section>
+    </main>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
