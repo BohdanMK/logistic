@@ -1,0 +1,57 @@
+.news {
+    background-color: #fff;
+
+    padding-bottom: 8rem;
+
+    &__wrapper {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 2rem;
+
+        margin-bottom: 3rem;
+
+        @include breakpoint($mobile) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+
+    &__title {
+        margin-bottom: 3.3rem;
+
+        font-family: $Lato;
+        font-size: 3rem;
+        font-weight: 900;
+        color: $dark;
+
+        & span {
+            color: $blue;
+        }
+    }
+
+    &__article {
+
+        &-title {
+            margin-bottom: 1rem;
+
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: $dark;
+        }
+
+        & p {
+            margin-bottom: 1rem;
+            padding-bottom: .5rem;
+            font-size: 1rem;
+            color: gray;
+            line-height: 1.4;
+        }
+
+        &-time {
+            font-size: .8rem;
+            color: #6E6E6E;
+        }
+    }
+
+
+}

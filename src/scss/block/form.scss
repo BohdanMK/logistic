@@ -1,0 +1,41 @@
+.form {
+    padding-top: 1.6rem;
+
+    &__group {
+        display: flex;
+        align-items: center;
+
+        margin: 1.3rem 0;
+
+        border-bottom: 1px solid rgba($color: #fff, $alpha: .25);
+    }
+
+    &__icon {
+        width: 1rem;
+        height: 1rem;
+
+        margin: -.5rem .5rem 0 1rem;
+    }
+
+    &__input {
+        width: 100%;
+        display: block;
+
+        padding-bottom: .5rem;
+
+        font-family: 'PT Sans', sans-serif;
+        color: #fff;
+
+        outline: none;
+        background: transparent;
+        border: none;
+
+
+        &::placeholder {
+            font-family: 'PT Sans', sans-serif;
+            font-size: 1rem;
+            color: #fff;
+            line-height: 2;
+        }
+    }
+}

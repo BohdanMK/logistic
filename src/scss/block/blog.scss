@@ -1,0 +1,46 @@
+.blog {
+    width: 100%;
+    max-width: 1200px;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    @include breakpoint($tablet) {
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+
+    &--news__wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__col {
+        width: 50%;
+        max-width: 600px;
+
+        @include breakpoint($tablet) {
+            width: 100%;
+            max-width: 100%;
+        }
+
+        &--right {
+            width: 40%;
+            max-width: 400px;
+        }
+    }
+
+    &--intro__left {
+            bottom: 0;
+
+        @include breakpoint($tablet) {
+            display: none;
+        }
+    }
+
+    &__btn-box {
+        display: flex;
+        column-gap: 2rem;
+    }
+}

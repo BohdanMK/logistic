@@ -1,0 +1,58 @@
+.btn {
+    width: 100%;
+
+    padding: .6rem 0;
+
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all .1s linear;
+    border: none;
+    border-radius: 5px;
+    background: rgb(255,144,62);
+    background: linear-gradient(62deg, rgba(255,144,62,1) 6%, rgba(255,44,44,1) 96%);
+
+    cursor: pointer;
+
+    &--clients,
+    &--main {
+        display: block;
+        width: 100%;
+        max-width: 212px;
+        box-shadow: 0 4px 4px rgba($color: #000000, $alpha: .25);
+
+        text-align: center;
+    }
+
+    &--clients {
+        margin-left: 3rem;
+
+    }
+
+    &--intro {
+        display: none;
+
+        @include breakpoint($mobile) {
+            display: block;
+        }
+    }
+
+    &--blog {
+        display: none;
+
+        @include breakpoint($tablet) {
+            display: block;
+        }
+    }
+
+
+    &:hover {
+        box-shadow: none;
+        transition: all .1s linear;
+        background: rgb(255,144,62);
+        background: linear-gradient(62deg, rgba(255,44,44,1) 6%,  rgba(255,144,62,1) 96%);
+    }
+
+
+}

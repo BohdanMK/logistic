@@ -1,0 +1,46 @@
+.footer {
+    width: 100%;
+    background: url("@img/Footer.jpg") no-repeat center;
+    background-size: cover;
+
+    &__wrapper {
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    &__logo {
+        width: 100%;
+        max-width: 136px;
+        height: auto;
+
+        margin-bottom: 1.6rem;
+    }
+
+    &__info {
+        margin-bottom: 1.8rem;
+
+        & a {
+            font-size: .8rem;
+            font-weight: 700;
+            text-decoration: none;
+            line-height: 1.5;
+            color: $gray;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        column-gap: 1.5rem;
+
+        &-link {
+            font-size: .8rem;
+            color: $blue;
+        }
+    }
+
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&family=PT+Sans:wght@400;700&     display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Головна</title>
+</head>
+<body>
+
+<main class="page">
+    <div class="page__head">
+        <header class="header">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a class="header__link" href="">
+                            <img class="header__images" src="img/Favicon.svg" alt="">
+                            <span>CenterLogistic</span>
+                        </a>
+                    </div>
+
+                    <nav class="nav">
+                        <ul class="nav__list">
+                            <li class="nav__item">
+                                <a class="nav__link" href="index.html">
+                                    Home Page
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="privacy-policy.html">
+                                    Privacy Policy
+                                </a>
+                            </li>
+                            <li class="nav__item">
+                                <a class="nav__link" href="conditions.html">
+                                    Terma & Conditions
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+
+                    <button class="burger">
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <img class="page__head-picture" src="img/blog/news-intro.jpg" alt="">
+    </div>
+
+    <div class="page__body">
+        <div class="container">
+            <div class="blog">
+                <div class="blog__col">
+                    <h2 class="news__title">
+                        <span>Interesting</span> to read
+                    </h2>
+                    <div class="news__wrapper blog--news__wrapper">
+                        <article class="news__article">
+                            <h3 class="news__article-title" >News title</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+                            <time class="news__article-time" datetime="2019-03-21">21 March, 2019</time>
+                        </article> <!--news__article-->
+                        <article class="news__article">
+                            <h3 class="news__article-title" >News title</h3>
+                            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. </p>
+                            <time class="news__article-time" datetime="2019-03-21">21 March, 2019</time>
+                        </article> <!--news__article-->
+
+                    </div> <!--news__wrapper-->
+                    <div class="blog__btn-box">
+                        <a href="index.html" class="btn btn--main">Back to home</a>
+                        <button data-modal="modalCall"  class="btn btn--main btn--blog">Become a client</button>
+                    </div>
+                </div>
+                <div class="blog__col blog__col--right">
+                    <div class="intro__left blog--intro__left">
+                        <div class="intro__left-head">
+                            <h3 class="intro__left-title">Get Callback</h3>
+                            <div class="intro__left-text">
+                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                            </div>
+                        </div>
+                        <form class="form" action="/" method="post">
+                            <div class="form__group">
+                                <img class="form__icon" src="img/name.svg" alt="">
+                                <input class="form__input" type="text" placeholder="Your name">
+                            </div>
+                            <div class="form__group">
+                                <img class="form__icon" src="img/call.svg" alt="">
+                                <input class="form__input" type="tel" placeholder="Your phone">
+                            </div>
+                            <div class="form__group">
+                                <img class="form__icon" src="img/mail.svg" alt="">
+                                <input class="form__input" type="email" placeholder="Your e-mail">
+                            </div>
+                        </form>
+                        <button id="formBtn" disabled data-modal="modalThk" class="btn" type="submit">Call me back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<div class="footer" style="background: url(img/Footer.jpg) no-repeat center / cover;" id="contact">
+    <div class="container">
+        <div class="footer__wrapper">
+            <a class="footer__link" href="index.html">
+                <img class="footer__logo" src="img/logo.png" alt="">
+            </a>
+            <address class="footer__info">
+                <a class="footer__address" href="">New York, Street, ZIP code
+                </a>
+                <div class="footer__link">
+                    <a href="tel:+9948373123">
+                        <span>Call Us:</span>
+                        +9948373123
+                    </a>
+                    <span>or</span>
+                    <a href="mailto:hello@centerlogistic.com">
+                        <span>E-mail:</span>
+                         hello@centerlogistic.com</a>
+                </div>
+            </address>
+            <ul class="footer__list">
+                <li class="footer__item">
+                    <a class="footer__list-link"  href="../conditions.html">Terms & Contidions</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__list-link" href="../privacy-policy.html"> Privacy Policy</a>
+                </li>
+                <li class="footer__item">
+                    <a class="footer__list-link" href="../blog.html">Our blog</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<section class="modal"  id="modalCall">
+    <div class="modal__block">
+        <button class="close">
+        </button>
+        <h3 class="modal__title">Need to deliver your cargo?
+            We can help!</h3>
+        <div class="modal__sup-title">
+            <p>Fill a little form and we will call you back!</p>
+        </div>
+
+        <form class="modal__form" action="/" method="post">
+            <div class="modal__group">
+                <img class="modal__icon" src="img/modal/person.svg" alt="">
+                <input class="modal__input" type="text" placeholder="Your name">
+            </div>
+            <div class="modal__group">
+                <img class="modal__icon" src="img/modal/call.svg" alt="">
+                <input class="modal__input" type="tel" placeholder="Your phone">
+            </div>
+            <div class="modal__group">
+                <img class="modal__icon" src="img/modal/mail.svg" alt="">
+                <input class="modal__input" type="email" placeholder="Your e-mail">
+            </div>
+        </form>
+        <button id="formBtn" disabled data-messeg="modalThk" class="btn" type="submit" >Call me back</button>
+
+        <address class="modal__address">
+            <h4 class="modal__address-title">Our contacts</h4>
+            <ul class="modal__address-list">
+                <li class="modal__address-item">
+                    <a class="modal__address-link" href="#">New York, Street, ZIP code</a>
+                </li>
+                <li class="modal__address-item">
+                    <span>Phone:</span>
+                    <a class="modal__address-link" href="tel:+9948373123
+                    ">+9948373123
+                    </a>
+                </li>
+                <li class="modal__address-item">
+                    <span>E-mail:</span><a class="modal__address-link" href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                </li>
+            </ul>
+        </address>
+    </div>
+</section>
+<section class="modal" id="modalThk">
+    <div class="modal__block">
+        <button class="close">
+        </button>
+        <img class="modal__picture" src="img/modal/tick.svg" alt="">
+        <h3 class="modal__title modal__title--messeg">Thanks for your request</h3>
+        <div class="modal__sup-title">
+            <p>We call you back as soon as possible!</p>
+        </div>
+
+        <address class="modal__address">
+            <h4 class="modal__address-title">Our contacts</h4>
+            <ul class="modal__address-list">
+                <li class="modal__address-item">
+                    <a class="modal__address-link" href="#">New York, Street, ZIP code</a>
+                </li>
+                <li class="modal__address-item">
+                    <span>Phone:</span>
+                    <a class="modal__address-link" href="tel:+9948373123
+                    ">+9948373123
+                    </a>
+                </li>
+                <li class="modal__address-item">
+                    <span>E-mail:</span><a class="modal__address-link" href="mailto:hello@centerlogistic.com">hello@centerlogistic.com</a>
+                </li>
+            </ul>
+        </address>
+    </div>
+</section>
+</main>
+<script src="js/app.min.js"></script>
+</body>
+</html>

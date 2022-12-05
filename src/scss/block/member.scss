@@ -1,0 +1,44 @@
+.member {
+
+    &__avatar {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+        margin-bottom: 1rem;
+
+        box-shadow: 0 4px 4px rgba($color: #000000, $alpha: .25);
+    }
+
+    &__info {
+        font-size: 1rem;
+        color: $gray;
+    }
+
+    &__name  {
+        font-family: $Lato;
+        font-size: 1.2rem;
+        font-weight: 900;
+        color: $dark;
+        line-height: 1.5;
+    }
+
+    &__contact {
+        display: block;
+        margin: .5rem 0;
+
+        font-size: .9rem;
+        color: $gray;
+        text-decoration: none;
+        transition: all .2s linear;
+        &:hover {
+            transition: all .2s linear;
+            transform: scale(1.05);
+        }
+
+    }
+    &__icon {
+        width: 1rem;
+        height: .7rem;
+    }
+}
